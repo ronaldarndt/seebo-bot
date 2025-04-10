@@ -31,7 +31,9 @@ const api = new ADS(
 );
 
 export async function execute(interaction: ChatInputCommandInteraction) {
-  await api.APILogin();
+  try {
+    await api.APILogin();
+  } catch {}
 
   const group = interaction.options.getSubcommandGroup();
 
