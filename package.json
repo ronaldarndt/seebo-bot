@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup --config rollup.config.js",
+    "build": "rollup --config rollup.config.mjs",
     "dev": "tsx main.ts",
     "deploy": "flyctl deploy --ha=false"
   },
