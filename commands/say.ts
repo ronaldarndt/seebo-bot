@@ -68,6 +68,7 @@ export async function execute(interaction: ChatInputCommandInteraction) {
 
       interaction.reply("Falando!");
     } catch (error) {
+      console.log("error", error);
       interaction.reply("Erro ao falar o texto!");
       voiceConnection.disconnect();
     }
